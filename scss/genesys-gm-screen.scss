@@ -1,0 +1,32 @@
+@import "common";
+@import "grid";
+@import "flex";
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3ede3;
+}
+.main-wrapper {
+    width: 1390px;
+    height: 690px;
+    padding: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .sheet-body {
+        height: 680px;
+        position: relative;
+
+        .sheet-page {
+            min-width: 1380px;
+            height: 680px;
+            float: left;
+        }
+    }
+}
+.nav-link {
+    cursor: pointer;
+    &:hover {
+        text-shadow: chocolate 1px 0 5px;
+    }
+}
